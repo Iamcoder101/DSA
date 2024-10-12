@@ -28,7 +28,7 @@ public class Main {
             }
 }
 
-output:ascending order sorted array is: 2 3 5 35 45 60 3200 
+//output:ascending order sorted array is: 2 3 5 35 45 60 3200 
 
 // code for descending order sorting using selection sort
 public class Main {
@@ -54,4 +54,4 @@ public class Main {
             }
 }
 
-output:descending order sorted array is: 3200 60 45 35 5 3 2 
+//output:descending order sorted array is: 3200 60 45 35 5 3 2 
