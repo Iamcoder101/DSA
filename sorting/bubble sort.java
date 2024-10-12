@@ -21,7 +21,7 @@ public class Main {
         }
             }
 }
-output:ascending order sorted array is: 2 3 5 35 45 60 320 
+//output:ascending order sorted array is: 2 3 5 35 45 60 320 
 
 
 // descending order bubble sort program
@@ -45,4 +45,4 @@ public class Main {
             }
 }
 
-output:descending order sorted array is: 320 60 45 35 5 3 2 
+//output:descending order sorted array is: 320 60 45 35 5 3 2 
