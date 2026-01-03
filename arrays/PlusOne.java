@@ -15,6 +15,7 @@ Input: digits = [4,3,2,1]
 Output: [4,3,2,2]
 Explanation: The array represents the integer 4321.
 */
+//first way using conversion
 import java.math.BigInteger;
 class Solution {
     public int[] plusOne(int[] digits) {
@@ -35,6 +36,36 @@ class Solution {
         return newd;
     }
 }
+
+//second way using actual array addition
+import java.util.*;
+class Solution {
+    public int[] plusOne(int[] digits) {
+        ArrayList<Integer> a=new ArrayList<>();
+       int carry=1;
+       for(int i=digits.length-1;i>=0;i--){
+        if(digits[i]>=9 && carry==1){
+            a.add(0);
+            carry=1;
+        }else{
+            a.add(carry+digits[i]);
+            carry=0;
+        }
+       }
+       if(carry==1){
+        a.add(carry);
+       }
+      
+        Collections.reverse(a);
+        int[] res=new int[a.size()];
+        for(int i=0;i<a.size();i++){
+            res[i]=a.get(i);
+        }
+      
+       return res;
+    }
+}
+
 /*
 Input
 digits =[9]
